@@ -6,4 +6,3 @@ PyGithub
 secure-smtplib
 Pillow
 regex
-email
