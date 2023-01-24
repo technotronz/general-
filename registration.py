@@ -5,6 +5,7 @@ import re
 from PIL import Image
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+from email.message import EmailMessage as EMsg
 
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 st.set_page_config(page_title="TZ'23 General Registration",page_icon="IETE_logo.png")
@@ -21,6 +22,34 @@ hide_ststyle = """
             header {visibility: hidden;}
             </style>
             """
+html_gr='''
+Greetings from IETE!
+
+Thank you for showing interest in the TECHNOTRONZ’23. Prepare yourselves to have a game changing experience with the intercollegiate symposium. 
+
+
+Your login information is as follows:
+
+Registration ID: TZ23III
+Name: technocrats
+Contact Number: 1234567890
+
+Note: These credentials enable you to register for the events or the workshop of the TECHNOTRONZ symposium.
+'''
+FROM = "technotronz23@gmail.com"
+password="qsfcotxmimrdiogr"
+def em(id,name,to,html_,number):
+    message = EMsg()
+    message['subject'] = "Your general registration for Technotronz'23 is confirmed!"  
+    message['to'] = to
+    message['from']=FROM
+    html_ = html_.replace('technocrats',name)
+    html_ = html_.replace('TZ23III',id)
+    html_ = html_.replace('1234567890',number)
+    message.add_alternative(html_,subtype='html')
+    with smtplib.SMTP_SSL('smtp.gmail.com',465) as smtp:
+        smtp.login(FROM,password)
+        smtp.send_message(message)
 st.markdown(hide_ststyle, unsafe_allow_html=True)
 i_=0
 scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
@@ -102,8 +131,11 @@ if d:
             print(row)
             data=sheet.get_all_values()
             r=sheet.cell(len(data),1).value
-            st.success("Your Registration ID is generated! Check your registered mail ID.")
+            em("TZ23"+str(int(r[4:])+1),name,mail,html_gr,ph)
             sheet.insert_row(["TZ23"+str(int(r[4:])+1)]+row,len(data)+1)
+            st.success("Your Registration ID is generated! Check your registered mail ID.")
+            
+            
 C1,C2,C3,C4=st.columns([0.2,0.5,0.1,0.1])
 with C2:
             note_gr = 'Got your registration ID? [Click here](https://technotronz-event-registration-cszffj.streamlit.app/) to register for events.'
