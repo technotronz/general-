@@ -22,7 +22,7 @@ hide_ststyle = """
             header {visibility: hidden;}
             </style>
             """
-st.write("test1")
+# st.write("test1")
 html_gr='''
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -567,7 +567,7 @@ html_gr='''
                         
                         <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #352F2F;">
                         
-                            <p style="color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif">Hello technocrats (TZ23III),</span></span></p>
+                            <p style="color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif">Hello Technocrat,</span></span></p>
 
 <p style="text-align: center;color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif">Greetings from <strong>IETE SC&nbsp;PSGCT</strong>✨</span></span></p>
 
