@@ -23,18 +23,11 @@ hide_ststyle = """
             </style>
             """
 html_gr='''
-Greetings from IETE!
-
-Thank you for showing interest in the TECHNOTRONZ’23. Prepare yourselves to have a game changing experience with the intercollegiate symposium. 
-
-
-Your login information is as follows:
-
-Registration ID: TZ23III
-Name: technocrats
-Contact Number: 1234567890
-
-Note: These credentials enable you to register for the events or the workshop of the TECHNOTRONZ symposium.
+<h2 style="text-align: center;">Greetings from IETE!</h2>
+<h4 style="text-align: center;">Thank you for showing interest in the TECHNOTRONZ&rsquo;23. Prepare yourselves to have a game-changing experience with the intercollegiate symposium.</h4>
+<h4 style="text-align: center;">Your login information is as follows:</h4>
+<h4 style="text-align: center;"><strong>Registration ID</strong>: TZ23III<br /><strong>Name</strong>: technocrats<br /><strong>Contact Number</strong>: 1234567890</h4>
+<h4 style="text-align: left;">Note: These credentials enable you to register for the events or the workshop of the TECHNOTRONZ symposium.</h4>
 '''
 FROM = "technotronz23@gmail.com"
 password="qsfcotxmimrdiogr"
