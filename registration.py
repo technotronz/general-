@@ -9,7 +9,7 @@ from email.message import EmailMessage as EMsg
 
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 st.set_page_config(page_title="TZ'23 General Registration",page_icon="IETE_logo.png")
-#go to home page
+#go to home pagee
 # link_home = "**[Go to home page](https://technotronz23.wixsite.com/home)**"
 # e,w,r=st.columns([2,2, 1])
 # with r:
