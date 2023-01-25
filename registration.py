@@ -22,6 +22,7 @@ hide_ststyle = """
             header {visibility: hidden;}
             </style>
             """
+st.write("test")
 html_gr='''
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
