@@ -582,6 +582,7 @@ html_gr='''
 <p style="text-align: center;color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif"><strong>Contact Number : 1234567890</strong></span></span></p>
 
 <p style="text-align: center;color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif">Start your <strong>TECHNOTRONZ'23</strong> journey now by using the forth mentioned credentials to register for Events or the Workshop.</span></span></p>
+<p style="text-align: center;color: #352F2F;"><a href="https://technotronz-event-registration-cszffj.streamlit.app/">Click here to proceed for event registration<a><p>
 
                         </td>
                     </tr>
