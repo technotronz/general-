@@ -941,6 +941,9 @@ one,two,thr=st.columns([0.1,1, 0.1])
 with two:
     st.header("Technotronz'23 General Registration ")
 
+dnote_er = 'Disclaimer: This form is supportable and accept responses only in latest version of the following browsers (Google Chrome, Microsoft Edge, Safari, Firefox)'
+st.markdown(dnote_er, unsafe_allow_html=True)
+
 name=st.text_input('Enter your full name:')
 rollno=st.text_input('Enter your roll number: ')
 mail=st.text_input('Enter your mail ID: ')
