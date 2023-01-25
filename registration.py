@@ -566,7 +566,7 @@ html_gr='''
                         
                         <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #352F2F;">
                         
-                            <p style="color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif">Hello Technocrats (TZ23III),</span></span></p>
+                            <p style="color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif">Hello technocrats (TZ23III),</span></span></p>
 
 <p style="text-align: center;color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif">Greetings from <strong>IETE SC&nbsp;PSGCT</strong>✨</span></span></p>
 
@@ -576,7 +576,7 @@ html_gr='''
 
 <p style="text-align: center;color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif"><strong>Registration ID : TZ23III</strong></span></span></p>
 
-<p style="text-align: center;color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif"><strong>Name : Technocrats</strong></span></span></p>
+<p style="text-align: center;color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif"><strong>Name : technocrats</strong></span></span></p>
 
 <p style="text-align: center;color: #352F2F;"><span style="font-size:14px"><span style="font-family:lato,helvetica neue,helvetica,arial,sans-serif"><strong>Contact Number : 1234567890</strong></span></span></p>
 
@@ -919,7 +919,7 @@ def em(id,name,to,html_,number):
     message['subject'] = "Your general registration for Technotronz'23 is confirmed!"  
     message['to'] = to
     message['from']=FROM
-    html_ = html_.replace('Technocrats',name)
+    html_ = html_.replace('technocrats',name)
     html_ = html_.replace('TZ23III',id)
     html_ = html_.replace('thenameis',name)
     html_ = html_.replace('1234567890',number)
