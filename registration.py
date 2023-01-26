@@ -1074,7 +1074,7 @@ if d:
             a2,b2,c2=st.columns([1,3,0.9])
             with b2:
 #             st.write('''<h5>Join us on our discord server for regular updates</h5>''',unsafe_allow_html=True)
-                 st.write(f'''<h5>Your Registration ID: {"TZ23"+str(int(r[4:])+1)} \n(Make note of your ID)</h5>''',unsafe_allow_html=True)
+                 st.write(f'''<h5>Your Registration ID: {"TZ23"+str(int(r[4:])+1)} <br>(Make note of your ID)</h5>''',unsafe_allow_html=True)
             
             
 C1,C2,C3,C4=st.columns([0.2,0.5,0.1,0.1])
