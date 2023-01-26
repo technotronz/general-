@@ -980,7 +980,7 @@ scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/aut
 creds = ServiceAccountCredentials.from_json_keyfile_name("technotronz23-general.json", scope)
 client = gspread.authorize(creds)
 sheet = client.open("Registration").sheet1
-
+data=sheet.get_all_values()
 p=st.empty()
 one,two,thr=st.columns([0.1,1, 0.1])
 with two:
@@ -1021,7 +1021,12 @@ with col2:
             d=st.button("Submit")
 if d:
 #   with col1:
-        name_err=rollno_err=mail_err=clg_err=year_err=ph_err=pdf_err=0
+        def check2(mail):
+            for i in range(1,len(data)):
+                if(mail.lower()==data[i][3].lower()):
+                    return 1
+            return 0
+        name_err=rollno_err=mail_err=clg_err=year_err=ph_err=pdf_err=mail2_err=0
         row=[name,rollno,mail,clg,year,ph]
         if not valid(name):
             st.error("Enter valid Name of participant")
@@ -1037,6 +1042,11 @@ if d:
             st.error("Enter valid Mail ID of participant")
         else:
             mail_err=1
+	###
+        if check2(mail):
+            st.error("Using already registered Mail ID")
+        else:
+            mail2_err=1
     ###
         if not valid2(clg):
             st.error("Enter valid College Name of participant")
@@ -1054,9 +1064,8 @@ if d:
             ph_err=1
 
     
-        if name_err==rollno_err==mail_err==clg_err==year_err==ph_err==1:
+        if name_err==rollno_err==mail_err==clg_err==year_err==ph_err==mail2_err==1:
             print(row)
-            data=sheet.get_all_values()
             r=sheet.cell(len(data),1).value
             em("TZ23"+str(int(r[4:])+1),name,mail,html_gr,ph)
             sheet.insert_row(["TZ23"+str(int(r[4:])+1)]+row,len(data)+1)
