@@ -1069,7 +1069,9 @@ if d:
             r=sheet.cell(len(data),1).value
             em("TZ23"+str(int(r[4:])+1),name,mail,html_gr,ph)
             sheet.insert_row(["TZ23"+str(int(r[4:])+1)]+row,len(data)+1)
-            st.success("Your Registration ID is generated! Check your registered mail ID.")
+            
+            st.success("Your Registration ID is generated! You will receive a response mail within 24 hours.")
+	    st.write(f'Your Registration ID: {"TZ23"+str(int(r[4:])+1)} (Make note of your ID)')
             
             
 C1,C2,C3,C4=st.columns([0.2,0.5,0.1,0.1])
