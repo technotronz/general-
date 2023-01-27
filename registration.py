@@ -990,7 +990,7 @@ dnote_er = 'Disclaimer: This form supports and accepts responses only in latest 
 st.markdown(dnote_er, unsafe_allow_html=True)
 
 name=st.text_input('Enter your full name:')
-rollno=st.text_input('Enter your roll number: ')
+rollno=st.text_input('Enter your college roll number: ')
 mail=st.text_input('Enter your mail ID: ')
 clg=st.text_input('Enter your college name: ')
 year=st.selectbox("Year of study: ",options=["--Choose--","I","II","III","IV","V"],index=0)
