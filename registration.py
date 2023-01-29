@@ -1029,7 +1029,7 @@ if d:
             return 0
      	
 	name_err=rollno_err=mail_err=clg_err=year_err=ph_err=pdf_err=mail2_err=0
-      	row=[name,rollno,mail,clg,year,ph]
+  	row=[name,rollno,mail,clg,year,ph]
         if not valid(name):
             st.error("Enter valid Name of participant")
         else:
