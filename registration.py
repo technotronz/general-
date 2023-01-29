@@ -979,8 +979,7 @@ i_=0
 scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
 creds = ServiceAccountCredentials.from_json_keyfile_name("technotronz23-general.json", scope)
 client = gspread.authorize(creds)
-sheet = client.open("Registration").sheet1
-data=sheet.get_all_values()
+
 p=st.empty()
 one,two,thr=st.columns([0.1,1, 0.1])
 with two:
@@ -1021,6 +1020,8 @@ with col2:
             d=st.button("Submit")
 if d:
 #   with col1:
+	sheet = client.open("Registration").sheet1
+	data=sheet.get_all_values()
         def check2(mail):
             for i in range(1,len(data)):
                 if(mail.lower()==data[i][3].lower()):
