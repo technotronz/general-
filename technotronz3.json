@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "technotronz3",
+  "private_key_id": "df365d24c237e77690d50501e0edef96dba762c3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCQQutBU51IBjol\n4VkLYFjqcIUdr2j0jqW8+OK5kPL1HdoyUW0llHhy7dzel2yWcFGrP8JgXYjGDcGL\nwUIVAi0bcmEoVurt5gLYTX8Y0V9JQuCyFtolNvZjj+Vuw5fTODiJPfHim5MQTuj+\nIAkvgNjqgZbuK8TiwH2EW10+Y0wWrKvWQK8JM5iplA0kRqnfVgyaXQqZLpR3dsNu\nFG3m+NHKS2fOQKu+SNlhP/RfDRuvixb6Mi36cnzj0znKHdHpiz7XXcYJr7VunrXP\nVJ/BEpu6uXz1KO081cNe8DgVO8NmnUDSp3QvHIQsQUIYHDkXQekqeWGIoPZ53ADn\nsUHs0czJAgMBAAECggEADE3S1hlpM56JWNf/od1jtAopBltCwMIGX4fcQY679B1J\n0gsZG7CONeI0+Xyxh6K4ino3jEPKAbdkY7S128gZ3AqNQBUquCPrJ/LzJUUdQwi7\n1KCnli86BEueekwfH8Yep1Dz15ukh0ptq5gEpIsxJQ4stu9ffWYExpRKz4KFV7Ud\ncBaoJYh5zHByKa2OZ0cCyCbkPcAWUyCLYwgYtOPAgzXk1RAn/pJRdbbr+HJKvfCp\nchqQFj0YpQYK2WN7ZX6ex+FOZ+Zw6MjAeuOQMKhCFlxg1toTF+agoYxqp4pQTCtV\n2wRpFM7EPs8FU7ReNBvV3KIt5Q+EAPumb2MTx8Fn4QKBgQDEpYk4lyzW1MhbccQl\nJkKZTqSp9lLJ8//AmgmxR4/q1Kt2YagOHun0ump6uK0t+XyYSz19COdYYNW12wCJ\n+QsexD6G6G96s9i4x2fMmJKqKpCJfpCGc0QXIwA7JWIzv1lDBKVywKV1HJyTlOEh\n04amzdpuphjZWOk6sQZ10LUm6QKBgQC7zbBY6dfAhi0NfYKcrvsvgW9Gh6Z4wgtA\nMhXjshp7OuxUDfs8XQWkAqwcL4UIztI5AsGjqkcEGnH4oiajvTpDZbMbgvhp5HLu\nVxTJZJREaIcyTPNfX/C9J5JjYU6l+bt4AmDfvfHrFpHVuTmMoytcFFYmVb/O7T7Z\nswo2TvmK4QKBgAcFchTXMP6qskyxjzNUXmRi7nYzGVmkoKkb1uTBjV3xIf4kFoAK\nkofucAbZuTU/BzfY1+UzAC+jpX3MyAQlJESA9UqT2gcjjMVsOUSQ3gu9YVPHdRmX\n3AKHeWajOxJl7qX58H5caov37Y9HbZJrnw8tonL480IvboRt9bEXNqChAoGAH+fb\n898WdnDVKpuOGwxnRDTbMMJO9+kPfEKGEX7qnNDv4X/WlPTAxpJlpwwzr8FjWags\nOZ/uHLZZcoIpyluVkGmwuhXQGj1jgTZuI6Dgx5ZykYsdNbDY92nHpvabI/t/a+4L\ngzeD6AqXkBW9vzThYu1ZjX237nHD4bxXGc7k+kECgYEAr6cG71O3l+BATAaUWpBD\nTEmCrDwqOjJUmHGmmmXWF6Uqv4O1fBwiYzLLNp9jLybMZbLh/ZOehcVMn+rTgHve\nbDJ0HocJzRw3KNJca3NjuuBzgJ9kvXcTnUWhYtvP1xtGZyk5dnw09tBNxRH30YIf\ntfsKGra813Eg8y0Sr25OTtc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "technotronz3@technotronz3.iam.gserviceaccount.com",
+  "client_id": "110610503061849144071",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/technotronz3%40technotronz3.iam.gserviceaccount.com"
+}
