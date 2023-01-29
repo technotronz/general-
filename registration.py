@@ -1064,8 +1064,7 @@ if d:
         else:
             ph_err=1
 
-    
-        if name_err==rollno_err==mail_err==clg_err==year_err==ph_err==mail2_err==1:
+    	if name_err==rollno_err==mail_err==clg_err==year_err==ph_err==mail2_err==1:
             print(row)
             r=sheet.cell(len(data),1).value
             em("TZ23"+str(int(r[4:])+1),name,mail,html_gr,ph)
