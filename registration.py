@@ -959,9 +959,11 @@ def fun3():
 						</a>
 				''',
 				unsafe_allow_html=True)
-FROM = "technotronz23@gmail.com"
-password="qsfcotxmimrdiogr"
-password="jsvatshndhrndezr"
+# FROM = "technotronz23@gmail.com"
+# password="qsfcotxmimrdiogr"
+# password="jsvatshndhrndezr"
+FROM = "technotronz.23.official@gmail.com"
+password="bfggnsnnxzbxufnj"
 def em(id,name,to,html_,number):
     message = EMsg()
     message['subject'] = "Your general registration for Technotronz'23 is confirmed!"  
