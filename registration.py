@@ -1034,18 +1034,18 @@ if d:
 
 	if not valid(name):
         	st.error("Enter valid Name of participant")
-    	else:
-          	name_err=1
-    ###
-     	if rollno=="" or rollno==' ':
-        	st.error("Enter valid Roll Number of participant")            
-     	else:
-        	rollno_err=1
-    ###     
-     	if check(mail):
+	else:
+		name_err=1
+	
+	if rollno=="" or rollno==' ':
+		st.error("Enter valid Roll Number of participant")            
+	else:
+		rollno_err=1
+	
+	if check(mail):
         	st.error("Enter valid Mail ID of participant")
-     	else:
-         	mail_err=1
+	else:
+		mail_err=1
 	###
         if check2(mail):
             st.error("Using already registered Mail ID")
