@@ -1022,7 +1022,7 @@ if d:
 #   with col1:
 	sheet = client.open("Registration").sheet1
 	data=sheet.get_all_values()
-        def check2(mail):
+	def check2(mail):
             for i in range(1,len(data)):
                 if(mail.lower()==data[i][3].lower()):
                     return 1
