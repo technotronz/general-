@@ -6,7 +6,7 @@ from PIL import Image
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from email.message import EmailMessage as EMsg
-
+#line
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 st.set_page_config(page_title="TZ'23 General Registration",page_icon="IETE_logo.png")
 #go to home page
