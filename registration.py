@@ -1031,52 +1031,53 @@ if d:
 	name_err=rollno_err=mail_err=clg_err=year_err=ph_err=pdf_err=mail2_err=0
 	
 	row=[name,rollno,mail,clg,year,ph]
-        if not valid(name):
-            st.error("Enter valid Name of participant")
-        else:
-            name_err=1
+
+	if not valid(name):
+        	st.error("Enter valid Name of participant")
+    	else:
+          	name_err=1
     ###
-        if rollno=="" or rollno==' ':
-            st.error("Enter valid Roll Number of participant")            
-        else:
-            rollno_err=1
+     	if rollno=="" or rollno==' ':
+        	st.error("Enter valid Roll Number of participant")            
+     	else:
+        	rollno_err=1
     ###     
-        if check(mail):
-            st.error("Enter valid Mail ID of participant")
-        else:
-            mail_err=1
+     	if check(mail):
+        	st.error("Enter valid Mail ID of participant")
+     	else:
+         	mail_err=1
 	###
         if check2(mail):
             st.error("Using already registered Mail ID")
         else:
             mail2_err=1
     ###
-        if not valid2(clg):
-            st.error("Enter valid College Name of participant")
-        else:
-            clg_err=1
+    	if not valid2(clg):
+         	st.error("Enter valid College Name of participant")
+   	else:
+         	clg_err=1
     ###
-        if year=="--Choose--":
-            st.error("Enter year of study for participant")
-        else:
-            year_err=1
+     	if year=="--Choose--":
+        	st.error("Enter year of study for participant")
+     	else:
+          	year_err=1
     ###
-        if ph=="" or ph==' ' or not (ph[4:].isdigit()) or len(ph)<10 or len(ph)>10:
-            st.error("Enter valid paricipant phone number")
-        else:
-            ph_err=1
+      	if ph=="" or ph==' ' or not (ph[4:].isdigit()) or len(ph)<10 or len(ph)>10:
+          	st.error("Enter valid paricipant phone number")
+      	else:
+         	ph_err=1
 
-    	if name_err==rollno_err==mail_err==clg_err==year_err==ph_err==mail2_err==1:
-            print(row)
-            r=sheet.cell(len(data),1).value
-            em("TZ23"+str(int(r[4:])+1),name,mail,html_gr,ph)
-            sheet.insert_row(["TZ23"+str(int(r[4:])+1)]+row,len(data)+1)
+   	if name_err==rollno_err==mail_err==clg_err==year_err==ph_err==mail2_err==1:
+     		print(row)
+            	r=sheet.cell(len(data),1).value
+            	em("TZ23"+str(int(r[4:])+1),name,mail,html_gr,ph)
+            	sheet.insert_row(["TZ23"+str(int(r[4:])+1)]+row,len(data)+1)
             
-            st.success("Your Registration ID is generated! You will receive a response mail within 24 hours.")
-            a2,b2,c2=st.columns([1.4,3,0.5])
-            with b2:
+            	st.success("Your Registration ID is generated! You will receive a response mail within 24 hours.")
+            	a2,b2,c2=st.columns([1.4,3,0.5])
+            	with b2:
 #             st.write('''<h5>Join us on our discord server for regular updates</h5>''',unsafe_allow_html=True)
-                 st.write(f'''<h5>Your Registration ID: {"TZ23"+str(int(r[4:])+1)} <br></h5>''',unsafe_allow_html=True)
+                 	st.write(f'''<h5>Your Registration ID: {"TZ23"+str(int(r[4:])+1)} <br></h5>''',unsafe_allow_html=True)
             
             
 C1,C2,C3,C4=st.columns([0.2,0.5,0.1,0.1])
