@@ -964,6 +964,8 @@ password="qsfcotxmimrdiogr"
 # password="jsvatshndhrndezr"
 FROM = "technotronz.23.official@gmail.com"
 password="bfggnsnnxzbxufnj"
+FROM = "technotronz.tz.23.iete@gmail.com"
+password="nowodhslyebzlrsb"
 def em(id,name,to,html_,number):
     message = EMsg()
     message['subject'] = "Your general registration for Technotronz'23 is confirmed!"  
