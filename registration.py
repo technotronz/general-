@@ -999,6 +999,7 @@ year=st.selectbox("Year of study: ",options=["--Choose--","I","II","III","IV","V
 ph=st.text_input('Your mobile number (follow this format - without country code: 935xxxxxxx): ')
 
 def check(email):
+			email = email.strip()
             if not (re.fullmatch(regex, email)):
                         return 1
             return 0
