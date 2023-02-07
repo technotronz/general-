@@ -30,12 +30,12 @@ hide_ststyle = """
             header {visibility: hidden;}
             </style>
             """
-st.markdown(hide_ststyle, unsafe_allow_html=True)
-i_=0
-scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("final.json", scope)
-client = gspread.authorize(creds)
-sheet = client.open("registration").sheet1
+# st.markdown(hide_ststyle, unsafe_allow_html=True)
+# i_=0
+# scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
+# creds = ServiceAccountCredentials.from_json_keyfile_name("final.json", scope)
+# client = gspread.authorize(creds)
+# sheet = client.open("registration").sheet1
 
 # f=open("ID.txt","r")
 # d=f.read()
@@ -53,18 +53,18 @@ sheet = client.open("registration").sheet1
 # PAGE_CONFIG={"page_title":"Event 1"}
 
 # st.title("hello")
-p=st.empty()
+# p=st.empty()
 st.title("TZ23 General registration ")
 # st.write("Each")
 # st.header("Select the number of participants")
 # sb=st.selectbox("Select the number of participants",options=["--Choose--","One","Two"],index=0)
 # if sb=="One":
-name=st.text_input('Enter your full name:')
-rollno=st.text_input('Enter your roll number: ')
-mail=st.text_input('Enter your mail ID: ')
-clg=st.text_input('Enter your college name: ')
-year=st.selectbox("Year of study: ",options=["--Choose--","I","II","III","IV","V"],index=0)
-ph=st.text_input('Your mobile number (follow this format - without country code: 935xxxxxxx): ')
+# name=st.text_input('Enter your full name:')
+# rollno=st.text_input('Enter your roll number: ')
+# mail=st.text_input('Enter your mail ID: ')
+# clg=st.text_input('Enter your college name: ')
+# year=st.selectbox("Year of study: ",options=["--Choose--","I","II","III","IV","V"],index=0)
+# ph=st.text_input('Your mobile number (follow this format - without country code: 935xxxxxxx): ')
 # pdf=st.file_uploader("College ID { in PDF format }",type=['PDF'])
 # if pdf is not None:
 #         with open(pdf.name,"wb") as f:
