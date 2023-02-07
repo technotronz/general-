@@ -24,6 +24,7 @@ hide_ststyle = """
             </style>
             """
 # st.write("test1")
+
 html_gr='''
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -920,10 +921,13 @@ def fun3():
 #             st.write(f'''<a target="_self" href="https://discord.gg/WgEDCtPN" target="_blank"><button>Click to join Technotronz'23 Discord server to follow regular updates</button></a>''',unsafe_allow_html=True)
 #               link = '[Make sure you join our discord server to receive regular updates](https://discord.gg/Pf4cqxZtQu)'
 #               st.markdown(link, unsafe_allow_html=True)
-    a2,b2,c2=st.columns([1,3,0.9])
-    a1,b1=st.columns([1,1.9])
+    a2,b2,c2=st.columns([0.1,3,0.1])
+    
     with b2:
-      st.write('''<h5>Join us on our discord server for regular updates</h5>''',unsafe_allow_html=True)
+      st.write('''<h5>Please join our Valediction (7th FEB 5:30 pm) to know the Prize Winners!</h5>''',unsafe_allow_html=True)
+    img1 = Image.open('Inauguration agenda.jpg')
+    st.image(img1)
+    a1,b1=st.columns([1,1.9])
     with b1:
       st.write('''
 				<style>
@@ -952,9 +956,9 @@ def fun3():
 				color: white;
 				}
 				</style>
-				<a  href="https://discord.gg/Pf4cqxZtQu" target="_blank" > 
+				<a  href="https://psgct.webex.com/psgct/j.php?MTID=m979527629f33b3a72076f10ba121a867" target="_blank" > 
 							<button class="button button1">
-								Discord Server
+								Click here
 							</button>
 						</a>
 				''',
@@ -991,14 +995,15 @@ with two:
     st.header("Technotronz'23 General Registration ")
 
 dnote_er = 'Disclaimer: This form supports and accepts responses only in latest versions of the following browsers (Google Chrome, Microsoft Edge, Safari, Firefox)'
-st.markdown(dnote_er, unsafe_allow_html=True)
 
-name=st.text_input('Enter your full name:')
-rollno=st.text_input('Enter your college roll number: ')
-mail=st.text_input('Enter your mail ID: ')
-clg=st.text_input('Enter your college name: ')
-year=st.selectbox("Year of study: ",options=["--Choose--","I","II","III","IV","V"],index=0)
-ph=st.text_input('Your mobile number (follow this format - without country code: 935xxxxxxx): ')
+st.markdown(dnote_er, unsafe_allow_html=True)
+st.error("Online registrations are closed. Thank you!")
+# name=st.text_input('Enter your full name:')
+# rollno=st.text_input('Enter your college roll number: ')
+# mail=st.text_input('Enter your mail ID: ')
+# clg=st.text_input('Enter your college name: ')
+# year=st.selectbox("Year of study: ",options=["--Choose--","I","II","III","IV","V"],index=0)
+# ph=st.text_input('Your mobile number (follow this format - without country code: 935xxxxxxx): ')
 
 def check(email):
 	email = email.strip()
@@ -1023,69 +1028,69 @@ div.stButton > button:first-child {
     color: black;
 }
 </style>""", unsafe_allow_html=True)
-with col2:
-            d=st.button("Submit")
-if d:
-#   with col1:
-	sheet = client.open("Registration").sheet1
-	data=sheet.get_all_values()
-	def check2(mail):
-            for i in range(1,len(data)):
-                if(mail.lower()==data[i][3].lower()):
-                    return 1
-            return 0
+# # with col2:
+# #             d=st.button("Submit")
+# if d:
+# #   with col1:
+# 	sheet = client.open("Registration").sheet1
+# 	data=sheet.get_all_values()
+# 	def check2(mail):
+#             for i in range(1,len(data)):
+#                 if(mail.lower()==data[i][3].lower()):
+#                     return 1
+#             return 0
      	
-	name_err=rollno_err=mail_err=clg_err=year_err=ph_err=pdf_err=mail2_err=0
+# 	name_err=rollno_err=mail_err=clg_err=year_err=ph_err=pdf_err=mail2_err=0
 	
-	row=[name,rollno,mail,clg,year,ph]
+# 	row=[name,rollno,mail,clg,year,ph]
 
-	if not valid(name):
-        	st.error("Enter valid Name of participant")
-	else:
-		name_err=1
+# 	if not valid(name):
+#         	st.error("Enter valid Name of participant")
+# 	else:
+# 		name_err=1
 	
-	if rollno=="" or rollno==' ':
-		st.error("Enter valid Roll Number of participant")            
-	else:
-		rollno_err=1
+# 	if rollno=="" or rollno==' ':
+# 		st.error("Enter valid Roll Number of participant")            
+# 	else:
+# 		rollno_err=1
 	
-	if check(mail):
-        	st.error("Enter valid Mail ID of participant")
-	else:
-		mail_err=1
+# 	if check(mail):
+#         	st.error("Enter valid Mail ID of participant")
+# 	else:
+# 		mail_err=1
 	
-	if check2(mail):
-		st.error("Using already registered Mail ID")
-	else:
-		mail2_err=1
+# 	if check2(mail):
+# 		st.error("Using already registered Mail ID")
+# 	else:
+# 		mail2_err=1
 		
-	if not valid2(clg):
-		st.error("Enter valid College Name of participant")
-	else:
-		clg_err=1
+# 	if not valid2(clg):
+# 		st.error("Enter valid College Name of participant")
+# 	else:
+# 		clg_err=1
 	
-	if year=="--Choose--":
-		st.error("Enter year of study for participant")
-	else:
-		year_err=1
+# 	if year=="--Choose--":
+# 		st.error("Enter year of study for participant")
+# 	else:
+# 		year_err=1
 	
-	if ph=="" or ph==' ' or not (ph[4:].isdigit()) or len(ph)<10 or len(ph)>10:
-		st.error("Enter valid paricipant phone number")
-	else:
-		ph_err=1
+# 	if ph=="" or ph==' ' or not (ph[4:].isdigit()) or len(ph)<10 or len(ph)>10:
+# 		st.error("Enter valid paricipant phone number")
+# 	else:
+# 		ph_err=1
 
-	if name_err==rollno_err==mail_err==clg_err==year_err==ph_err==mail2_err==1:
-		r=sheet.cell(len(data),1).value
-		em("TZ23"+str(int(r[4:])+1),name,mail,html_gr,ph)
-		sheet.insert_row(["TZ23"+str(int(r[4:])+1)]+row,len(data)+1)
-		st.success("Your Registration ID is generated! You will receive a response mail within 24 hours.")
-		a2,b2,c2=st.columns([1.4,3,0.5])
-		with b2:
-			st.write(f'''<h5>Your Registration ID: {"TZ23"+str(int(r[4:])+1)} <br></h5>''',unsafe_allow_html=True)
+# 	if name_err==rollno_err==mail_err==clg_err==year_err==ph_err==mail2_err==1:
+# 		r=sheet.cell(len(data),1).value
+# 		em("TZ23"+str(int(r[4:])+1),name,mail,html_gr,ph)
+# 		sheet.insert_row(["TZ23"+str(int(r[4:])+1)]+row,len(data)+1)
+# 		st.success("Your Registration ID is generated! You will receive a response mail within 24 hours.")
+# 		a2,b2,c2=st.columns([1.4,3,0.5])
+# 		with b2:
+# 			st.write(f'''<h5>Your Registration ID: {"TZ23"+str(int(r[4:])+1)} <br></h5>''',unsafe_allow_html=True)
             
             
 C1,C2,C3,C4=st.columns([0.2,0.5,0.1,0.1])
-with C2:
-            note_gr = 'Got your registration ID? [Click here](https://technotronz-event-registration-cszffj.streamlit.app/) to register for events.'
-            st.markdown(note_gr, unsafe_allow_html=True)
+# with C2:
+#             note_gr = 'Got your registration ID? [Click here](https://technotronz-event-registration-cszffj.streamlit.app/) to register for events.'
+#             st.markdown(note_gr, unsafe_allow_html=True)
 fun3()
