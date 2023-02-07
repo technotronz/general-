@@ -925,7 +925,7 @@ def fun3():
     
     with b2:
       st.write('''<h5>Please join our Valediction (7th FEB 5:30 pm) to know the Prize Winners!</h5>''',unsafe_allow_html=True)
-    img1 = Image.open('Inauguration agenda.jpg')
+    img1 = Image.open('valediction poster finall.jpg')
     st.image(img1)
     a1,b1=st.columns([1,1.9])
     with b1:
