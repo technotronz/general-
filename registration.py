@@ -923,46 +923,46 @@ def fun3():
 #               st.markdown(link, unsafe_allow_html=True)
     a2,b2,c2=st.columns([0.1,3,0.1])
     
-    with b2:
-      st.write('''<h5>Please join our Valediction (7th FEB 5:30 pm) to know the Prize Winners!</h5>''',unsafe_allow_html=True)
-    img1 = Image.open('valediction poster.jpg')
-    st.image(img1)
-    a1,b1=st.columns([1,1.9])
-    with b1:
-      st.write('''
-				<style>
-				.button {
-				background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
-				border: none;
-				color: white;
-				padding: 15px 30px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				margin: 3px 1px;
-				transition-duration: 0.4s;
-				cursor: pointer;
-				border-radius: 13px;
-				width: auto;
-				}
-				.button1 {
-				background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);; 
-				color: white; 
-				border: 2px solid #314755;
-				}
-				.button1:hover {
-				background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
-				color: white;
-				}
-				</style>
-				<a  href="https://psgct.webex.com/psgct/j.php?MTID=m979527629f33b3a72076f10ba121a867" target="_blank" > 
-							<button class="button button1">
-								Click here
-							</button>
-						</a>
-				''',
-				unsafe_allow_html=True)
+#     with b2:
+#       st.write('''<h5>Please join our Valediction (7th FEB 5:30 pm) to know the Prize Winners!</h5>''',unsafe_allow_html=True)
+#     img1 = Image.open('valediction poster.jpg')
+#     st.image(img1)
+#     a1,b1=st.columns([1,1.9])
+#     with b1:
+#       st.write('''
+# 				<style>
+# 				.button {
+# 				background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+# 				border: none;
+# 				color: white;
+# 				padding: 15px 30px;
+# 				text-align: center;
+# 				text-decoration: none;
+# 				display: inline-block;
+# 				font-size: 16px;
+# 				margin: 3px 1px;
+# 				transition-duration: 0.4s;
+# 				cursor: pointer;
+# 				border-radius: 13px;
+# 				width: auto;
+# 				}
+# 				.button1 {
+# 				background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);; 
+# 				color: white; 
+# 				border: 2px solid #314755;
+# 				}
+# 				.button1:hover {
+# 				background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+# 				color: white;
+# 				}
+# 				</style>
+# 				<a  href="https://psgct.webex.com/psgct/j.php?MTID=m979527629f33b3a72076f10ba121a867" target="_blank" > 
+# 							<button class="button button1">
+# 								Click here
+# 							</button>
+# 						</a>
+# 				''',
+# 				unsafe_allow_html=True)
 FROM = "technotronz23@gmail.com"
 password="qsfcotxmimrdiogr"
 # password="jsvatshndhrndezr"
